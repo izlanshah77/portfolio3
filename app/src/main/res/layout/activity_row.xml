@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:background="#2eb2ff"
+        app:srcCompat="@drawable/activity" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#2eb2ff"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:text="TEXT"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#2eb2ff"
+            android:text="TEXT"
+            android:textColor="@android:color/white"
+             />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="0.25"
+        app:srcCompat="@drawable/profile"
+        android:background="#2eb2ff"/>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background1"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context=".MainActivity"
+    android:id="@+id/settingsView">
+
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnHOME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:background="#5271ff"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="SETTINGS"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/settings_white"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16px"
+        android:textSize="24sp"
+        android:gravity="left"
+        android:text="Change Theme:"
+        android:textColor="#2eb2ff"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/spinnerColor"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnLogOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#5271ff"
+            android:text="Logout"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btnSAVE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16px"
+            android:background="#5271ff"
+            android:text="save"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
